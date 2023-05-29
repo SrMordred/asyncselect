@@ -5,6 +5,8 @@ A Select for Futures, inspired by Rust `select!` macro.
 ### Example:
 
 ```nim
+import asyncselect
+
 var fut1 = async_func1();
 var fut2 = async_func2();
 
