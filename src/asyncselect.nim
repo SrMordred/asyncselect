@@ -1,6 +1,6 @@
 import macros
 
-macro asyncselect*( select_body: untyped ): untyped = 
+macro select*( select_body: untyped ): untyped = 
     expectKind(select_body, nnkStmtList)
 
     var select_stmt_list = newStmtList()

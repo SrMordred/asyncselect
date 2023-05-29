@@ -13,7 +13,7 @@ test "Basic Usage":
     let fut2 = sleep_test(200)
     let fut3 = sleep_test(300)
 
-    asyncselect:
+    select:
         fut1 as r1:
             check r1 == 100
         fut2 as r2:
